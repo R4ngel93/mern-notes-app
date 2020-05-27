@@ -19,6 +19,8 @@ Other packages & modules
 CSS frameworks
 · materialize
 
+Link to app: https://mern-notes-app-v1.herokuapp.com/
+
 
 Author: r4ng3l
 
