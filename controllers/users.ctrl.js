@@ -3,10 +3,10 @@ require('dotenv').config();
 
 /* Input validation */
 const validateRegisterInput = require("../validation/register.js");
-const validateLoginInput = require("../validation/login.js");
+const validateLoginInput = require("../validation/login");
 
 /* Model */
-const User = require('../models/User.js');
+const User = require('../models/User');
 
 /* Controllers */
 module.exports = {

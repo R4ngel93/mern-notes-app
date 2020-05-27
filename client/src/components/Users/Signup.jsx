@@ -20,7 +20,7 @@ function Signup(props) {
     const obj = { username, email, password, password2 };
 
     /* Axios */
-    axios.post('/api/users/signup', obj)
+    axios.post('api/users/signup', obj)
       .then(res => {
         props.history.push('/login');
         console.log(res.data);

@@ -6,7 +6,7 @@ function Note(props) {
 
   /* Functions */
   const deleteData = () => {
-    axios.delete('/api/notes/delete/' + props.obj._id)
+    axios.delete('api/notes/delete/' + props.obj._id)
       .then(console.log('Deleted'))
       .catch(err => console.log(err));
     window.location.reload();

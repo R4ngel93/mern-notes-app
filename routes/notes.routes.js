@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 /* Controller */
-const NotesCtrl = require('../controllers/notes.ctrl.js');
+const NotesCtrl = require('../controllers/notes.ctrl');
 
 /* Validate user token */
 const validateUser = require('../middlewares/validateUser');

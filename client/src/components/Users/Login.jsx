@@ -17,7 +17,7 @@ function Login(props) {
     const obj = { email, password };
 
     /* Axios */
-    axios.post('/api/users/login', obj)
+    axios.post('api/users/login', obj)
       .then(res => {
         login();//utils
         props.history.push('/notes');

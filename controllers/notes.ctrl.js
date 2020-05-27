@@ -8,9 +8,10 @@ const Note = require('../models/Note.js');
 module.exports = {
   //Show all notes
   getNotes: async function (req, res) {
-    Note.find({ user: req.user.id }, (error, notes) => {
-      error ? console.error(error) : res.json({ notes });
-    });
+    Note.find({ user: req.user.id })
+      .then(notes => res.json(notes))
+      .catch(error => console.error(error));
+
   },
 
   //Add note

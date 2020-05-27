@@ -16,7 +16,7 @@ function NewNote(props) {
 
     const obj = { title, description };
 
-    axios.post('/api/notes/add', obj)
+    axios.post('api/notes/add', obj)
       .then(res => {
         props.history.push('/notes');
         window.location.reload();

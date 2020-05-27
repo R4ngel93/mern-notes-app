@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const path = require('path');
 
-const UsersRoutes = require('./routes/users.routes.js');
+const UsersRoutes = require('./routes/users.routes');
 const NotesRoutes = require('./routes/notes.routes.js');
 
 require('./database/db_connection.js');
@@ -29,15 +29,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 /* Routes */
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
 
 //Public routes
 app.use('/api/users', UsersRoutes);
 
 //Private routes
 app.use('/api/notes', NotesRoutes);
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 /* Server */
 app.listen(PORT, () => {

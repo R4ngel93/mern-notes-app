@@ -9,7 +9,7 @@ function EditNote(props) {
 
   /* Efects */
   useEffect(() => {
-    axios.get('/api/notes/edit/' + props.match.params.id)
+    axios.get('api/notes/edit/' + props.match.params.id)
       .then(response => {
         set_title(response.data.title);
         set_description(response.data.description);
@@ -29,7 +29,7 @@ function EditNote(props) {
       description
     };
 
-    axios.put('/api/notes/edit/' + props.match.params.id, obj)
+    axios.put('api/notes/edit/' + props.match.params.id, obj)
       .then(res => {
         props.history.push('/notes');
         window.location.reload();

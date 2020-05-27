@@ -19,10 +19,14 @@ function Notes(props) {
 
 
     //Get notes
-    axios.get('/api/notes')
-      .then(res => set_notes(res.data.notes))
+    axios.get('api/notes')
+      .then(res => {
+        console.log(res.data)
+        set_notes(res.data)
+      })
       .catch(error => console.error('Error: ', error));
 
+    set_notes([]);
   }, []);//componentDidMount
 
 
@@ -39,7 +43,7 @@ function Notes(props) {
   const handleLogout = () => {
     logout();
 
-    axios.get('/api/users/logout')
+    axios.get('api/users/logout')
       .then(res => {
         props.history.push('/');
         window.location.reload();
