@@ -12,7 +12,7 @@ const NotesRoutes = require('./routes/notes.routes.js');
 
 require('./database/db_connection.js');
 require('colors');
-require('dotenv').config();
+//require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 

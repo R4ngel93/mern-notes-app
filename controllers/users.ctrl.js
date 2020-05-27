@@ -1,5 +1,5 @@
 /* Set up */
-require('dotenv').config();
+//require('dotenv').config();
 
 /* Input validation */
 const validateRegisterInput = require("../validation/register.js");

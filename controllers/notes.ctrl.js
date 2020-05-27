@@ -1,5 +1,5 @@
 /* Set up */
-require('dotenv').config();
+//require('dotenv').config();
 
 /* Model */
 const Note = require('../models/Note.js');
