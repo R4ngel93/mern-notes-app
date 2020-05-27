@@ -1,0 +1,33 @@
+{
+  "name": "mern-notes-app",
+  "version": "1.0.0",
+  "description": "Notes application using MERN technologies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "r4ng3l",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.16.3"
+  }
+}
