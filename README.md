@@ -1,30 +1,23 @@
-### MERN CRUD fullstack app | Notes Application ###
+# MERN CRUD fullstack app | Notes Application #
 
 ## Description ##
 First notes apllication project made with MERN technologies. 
 It also includes a Signup/Login system using JWT.
 
 ## Technologies MERN ## 
-  · MongoDB
-  · Express.js
-  · React
-  · Node.js
-
+	· MongoDB
+	· Express.js
+	· React
+	· Node.js 
+	
 ## Other packages & modules ##
-  · JWT
-  · helmet 
-  · mongoose
-  · cors
+	· JWT
+	· helmet
+	· cors
+	· mongoose
 
 ## CSS frameworks ##
-  · materialize
+	· materialize
 
 ## Link to app ##
 https://mern-notes-app-v1.herokuapp.com/
-
-
-## Technologies ##
-	· Node.js
-	· Express.js
-	· React
-	· MongoDB & mongoose
